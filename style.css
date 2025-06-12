@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #ff0019, #6d1010);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  margin-top: 100px;
+  font-size: 2.5rem;
+}
+
+#timer {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+#message {
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+}
+
+.button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: darkred;
+}
+
+.heart {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background: url('https://i.imgur.com/Z7AzH2c.png') no-repeat center/contain;
+  top: -50px;
+  z-index: 999;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+  }
+}
